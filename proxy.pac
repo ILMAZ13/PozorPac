@@ -4,10 +4,8 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "(test*|*test).*tinkoff*.ru")   
   ) return "PROXY 192.168.1.35:8888";
   if (shExpMatch(host, "*.pochta.ru") ||
-      shExpMatch(host, "*.vetrf.ru") ||
-      shExpMatch(host, "*.pecom.ru") ||
-      shExpMatch(host, "pecom.ru")
-  ) return "DIRECT; PROXY 192.168.1.35:8888";
+      shExpMatch(host, "*.tatarstan.ru")
+  ) return "PROXY 192.168.1.35:8888";
   if (shExpMatch(url, "https://yandex.ru/")) return "PROXY 0.0.0.0:8080";
   return "DIRECT";
 }

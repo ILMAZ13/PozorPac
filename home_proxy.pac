@@ -17,7 +17,8 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "*rutracker*") ||
       shExpMatch(host, "*pornolab*") ||
       // Streams
-      shExpMatch(host, "*4h0y.gitlab.io")
+      shExpMatch(host, "*4h0y.gitlab.io") ||
+      shExpMatch(host, "*udarnik.cc")
   ) return "PROXY 192.168.0.105:8118";
   return "DIRECT";
 }

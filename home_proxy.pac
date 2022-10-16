@@ -4,15 +4,18 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "hr.*tinkoff*.ru") ||
       shExpMatch(host, "(test*|*test).*tinkoff*.ru")
   ) return "PROXY 192.168.0.108:8888";
-  if (shExpMatch(host, "*twitter.com") ||
-      shExpMatch(host, "*twimg.com") ||
+  // inst
+  if (shExpMatch(host, "*twitter*") ||
+      shExpMatch(host, "*twimg*") ||
       shExpMatch(host, "(www.)?t.co") ||
-      shExpMatch(host, "*facebook.com") ||
-      shExpMatch(host, "*fbcdn.net") ||
-      shExpMatch(host, "*instagram.com") ||
-      shExpMatch(host, "*cdninstagram.com") ||
+      shExpMatch(host, "*facebook*") ||
+      shExpMatch(host, "*fbcdn*") ||
+      shExpMatch(host, "*instagram*") ||
       shExpMatch(host, "(www.)?fb.com") ||
-      shExpMatch(host, "*messenger.com")
+      shExpMatch(host, "*messenger.com") ||
+      // Torents
+      shExpMatch(host, "*rutracker*") ||
+      shExpMatch(host, "*pornolab*")
   ) return "PROXY 192.168.0.105:8118";
-  return "PROXY 192.168.0.108:8888" //"DIRECT";
+  return "DIRECT";
 }

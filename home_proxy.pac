@@ -19,5 +19,5 @@ function FindProxyForURL(url, host) {
       // Streams
       shExpMatch(host, "*4h0y.gitlab.io")
   ) return "PROXY 192.168.0.105:8118";
-  return "DIRECT";
+  return "PROXY 192.168.0.108:8888"; //"DIRECT";
 }

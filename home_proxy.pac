@@ -4,8 +4,9 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "hr.*tinkoff*.ru") ||
       shExpMatch(host, "(test*|*test).*tinkoff*.ru")
   ) return "PROXY 192.168.0.108:8888";
-      // inst
-  if (//shExpMatch(host, "*twitter*") ||
+  if (
+      // Inst
+      //shExpMatch(host, "*twitter*") ||
       //shExpMatch(host, "*twimg*") ||
       //shExpMatch(host, "(www.)?t.co") ||
       //shExpMatch(host, "*facebook*") ||

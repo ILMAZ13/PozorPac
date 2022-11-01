@@ -3,6 +3,6 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "(qa*|*qa).*tinkoff*.ru") ||
       shExpMatch(host, "hr.*tinkoff*.ru") ||
       shExpMatch(host, "(test*|*test).*tinkoff*.ru")
-  ) return "PROXY 172.18.34.6:8888";
+  ) return "PROXY 172.18.34.126:8888";
   return "DIRECT";
 }

@@ -3,9 +3,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(host, "(qa*|*qa).*tinkoff*.ru") ||
       shExpMatch(host, "hr.tinkoff.ru") ||
       shExpMatch(host, "access.tinkoff.ru") ||
-      shExpMatch(host, "(test*|*test).*tinkoff*.ru") ||
-      shWxpMatch(host, "chls.pro") ||
-      shWxpMatch(host, "ssl.charles")
+      shExpMatch(host, "(test*|*test).*tinkoff*.ru")
   ) return "PROXY 192.168.1.109:8888";
   return "DIRECT";
 }
